@@ -17,18 +17,13 @@ header{
     color: rgb(72, 180, 243);
     position: fixed;
     display: flex;
-    width:100%;
+    width: 100%;
     justify-content: space-between;
     margin: 0px;
     z-index: 999;
     transition: 0.7s;
 }
 
-p{
-    font-family:'Segoe UI';
-    text-align: center;
-    color: rgb(164, 181, 255);
-}
 .main{
     padding: 100px 200px;
     min-height: 100vh;
@@ -48,7 +43,7 @@ p{
     background-size: cover;
     image-rendering: -webkit-optimize-contrast;
     background-position: center;
-    filter: blur(5px);
+    filter: blur(0px);
     z-index: -100;
     top: 0;
     left: 0;
@@ -74,7 +69,7 @@ p{
 }
 .vmw{
     color: rgb(0, 0, 0);
-    background-color: rgb(0, 207, 211);
+    background-color: rgba(0, 177, 180, 0.548);
     text-decoration:none;
     border-radius:25px;
     display: inline-block;
@@ -86,7 +81,7 @@ p{
     margin-left: 10px;
 }
 .vmw:hover{
-    background-color: rgb(108, 231, 253);
+    background-color: rgb(0, 177, 180);
     color: rgb(0, 0, 0);
     transform: scale(1.14);
     border-radius: 20px;
@@ -94,8 +89,10 @@ p{
 }
 .next{
     background-color: rgb(255, 255, 255);
-    min-height: 100vh;
+    height: 100vh;
     padding-top: 50px;
+    background-image: url("/images/bak2.jpg");
+    background-attachment: fixed;    
 }
 .tailer{
     background-color: rgb(6, 6, 68);
@@ -103,4 +100,51 @@ p{
     min-height: 100vh;
     text-align: center;
     padding-top: 50px;
+}
+.neogo{
+    color: rgb(236, 236, 236);
+    font-family: cursive;
+}
+.card{
+    background-color: rgba(255, 255, 255, 0.322);
+    border-radius: 5px;
+    box-shadow: 0px 5px 25px black;
+    width: 300px;
+    height: 400px;
+    margin: 80px 20px;
+    padding: 25px;
+    border-radius: 30px;
+    align-items: center;
+    transition: 0.4s;
+}
+.cic{
+    font-size: 100px;
+    color: yellow;
+    text-align: center;
+    transition: 0.7s;
+}
+.cic2{
+    font-size: 100px;
+    color: rgb(0, 204, 255);
+    text-align: center;
+}
+.cic3{
+    font-size: 100px;
+    color: rgb(25, 0, 255);
+    text-align: center;
+}
+.info{
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    margin: 2em;
+    text-align: center;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card:hover{
+    transform: scale(1.1);
 }
